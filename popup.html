@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deal Finder</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        width: 250px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      #results {
+        margin-top: 10px;
+      }
+      .link {
+        display: block;
+        margin-top: 5px;
+        color: #007bff;
+        text-decoration: none;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Deal Finder</h1>
+    <button id="findDeals">Find Deals</button>
+    <div id="results"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

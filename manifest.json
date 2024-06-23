@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Deal Finder",
+  "version": "1.0",
+  "description": "Compare product prices across multiple websites.",
+  "permissions": ["activeTab", "storage", "tabs", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
